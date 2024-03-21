@@ -1,14 +1,15 @@
+/* Common Styles */
 body {
   text-align: center;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin: 5%;
+  margin: 5% auto; /* Center level title vertically */
   color: #ffffff;
 }
 
@@ -54,7 +55,8 @@ body {
   background-color: grey;
 }
 
-#starting-page{
+/* Starting Page Styles */
+#starting-page {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -69,7 +71,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#starting-page button{
+#starting-page button {
   background-color: #FFD700; /* Golden yellow */
   color: #222;
   padding: 15px 30px;
@@ -80,11 +82,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-#starting-page button:hover{
+#starting-page button:hover {
   background-color: transparent;
   color: #FFD700; /* Golden yellow */
 }
 
+/* Ending Page Styles */
 #ending-page {
   position: absolute;
   top: 50%;
@@ -124,8 +127,9 @@ body {
   font-weight: bold;
 }
 
+/* Copyright Styles */
 #copyright {
-  margin-top: 600px;                                     
+  margin-top: 30px;                                     
   color: #FFFFFF;
   padding: 20px;
   text-align: center;
@@ -137,64 +141,15 @@ body {
   cursor: pointer;
 }
 
-/* Mobile Portrait Screen Styles */
-@media only screen and (max-width: 480px) {
-  #level-title {
-    font-size: 2rem;
-    margin: 10% auto; /* Increase margin for better centering */
-  }
-
-  .container {
-    width: 80%; /* Adjust container width for better fit on smaller screens */
-    margin: auto;
-  }
-
-  .btn {
-    height: 100px;
-    width: 100px;
-    border: 8px solid black; /* Decrease border size for better fit */
-  }
-
-  #starting-page {
-    padding: 20px;
-    font-size: 1.5rem; /* Decrease font size for better readability */
-  }
-
-  #starting-page button {
-    padding: 10px 20px; /* Decrease padding for better fit */
-    font-size: 1rem; /* Decrease font size for better fit */
-  }
-
-  #ending-page {
-    padding: 30px;
-    font-size: 1.8rem; /* Decrease font size for better readability */
-  }
-
-  #ending-page h1 {
-    margin-bottom: 20px;
-    font-size: 1.5rem; /* Decrease font size for better readability */
-  }
-
-  #ending-page button {
-    padding: 10px 20px; /* Decrease padding for better fit */
-    font-size: 1rem; /* Decrease font size for better fit */
-  }
-
-  #copyright {
-    margin-top: 20px; /* Adjust margin for better positioning */
-    font-size: 0.8rem; /* Decrease font size for better fit */
-  }
-}
-
-
+/* Gradient Animation */
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
