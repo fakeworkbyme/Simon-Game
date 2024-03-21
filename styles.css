@@ -153,3 +153,14 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for screens smaller than 600px (Mobile devices) */
+  #starting-page,
+  #ending-page {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 20px; /* Adjust padding */
+    font-size: 1.5rem; /* Adjust font size */
+  }
+}
