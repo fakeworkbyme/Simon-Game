@@ -1,15 +1,14 @@
-/* Common Styles */
 body {
   text-align: center;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+	background-size: 800% 800%;
+	animation: gradient 15s ease infinite;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin: 5% auto; /* Center level title vertically */
+  margin: 5%;
   color: #ffffff;
 }
 
@@ -55,8 +54,7 @@ body {
   background-color: grey;
 }
 
-/* Starting Page Styles */
-#starting-page {
+#starting-page{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,7 +69,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#starting-page button {
+#starting-page button{
   background-color: #FFD700; /* Golden yellow */
   color: #222;
   padding: 15px 30px;
@@ -82,12 +80,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
-#starting-page button:hover {
+#starting-page button:hover{
   background-color: transparent;
   color: #FFD700; /* Golden yellow */
 }
 
-/* Ending Page Styles */
 #ending-page {
   position: absolute;
   top: 50%;
@@ -127,9 +124,8 @@ body {
   font-weight: bold;
 }
 
-/* Copyright Styles */
 #copyright {
-  margin-top: 30px;                                     
+  margin-top: 600px;                                     
   color: #FFFFFF;
   padding: 20px;
   text-align: center;
@@ -141,26 +137,14 @@ body {
   cursor: pointer;
 }
 
-/* Gradient Animation */
 @keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Media Queries */
-@media only screen and (max-width: 600px) {
-  /* Adjust styles for screens smaller than 600px (Mobile devices) */
-  #starting-page,
-  #ending-page {
-    width: 80%; /* Adjust width for smaller screens */
-    padding: 20px; /* Adjust padding */
-    font-size: 1.5rem; /* Adjust font size */
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
